@@ -1,0 +1,11 @@
+﻿<Application x:Class="CustomTemplates.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" xmlns:dxbt="clr-namespace:DevExpress.Xpf.Bars.Themes;assembly=DevExpress.Xpf.Core.v10.1" xmlns:dxbc="clr-namespace:DevExpress.Xpf.Bars.Customization;assembly=DevExpress.Xpf.Core.v10.1" xmlns:sys="clr-namespace:System;assembly=mscorlib" StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/CustomTemplates;component/Themes/TabControl.xaml" />
+                <ResourceDictionary Source="/CustomTemplates;component/Themes/ListBox.xaml" />
+                <ResourceDictionary Source="/CustomTemplates;component/Themes/Window.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

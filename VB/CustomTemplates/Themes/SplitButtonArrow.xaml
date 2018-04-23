@@ -1,0 +1,42 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" xmlns:dxbt="clr-namespace:DevExpress.Xpf.Bars.Themes;assembly=DevExpress.Xpf.Core.v10.1" xmlns:dxbc="clr-namespace:DevExpress.Xpf.Bars.Customization;assembly=DevExpress.Xpf.Core.v10.1" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <ControlTemplate x:Key="{dxbt:BarSplitButtonItemThemeKey ResourceKey=ArrowTemplate}" TargetType="{x:Type dxb:BarSplitButtonItemArrowControl}">
+        <Grid Background="#00FFFFFF " Margin="3,0,3,0">
+            <Border x:Name="arrow" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Path Data="F1 M 1324,808L 1321,811L 1318,808L 1324,808 Z " Fill="Black" Height="3" HorizontalAlignment="Center" SnapsToDevicePixels="True" Stretch="Fill" Margin="0,0,0,1" VerticalAlignment="Center" Width="6" />
+            </Border>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <DataTrigger Binding="{Binding Path=IsMouseOver, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type dxb:BarSplitButtonItemLinkControl}}}" Value="True">
+            </DataTrigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="{dxbt:BarSplitButtonItemThemeKey ResourceKey=ArrowTemplateInMainMenu}" TargetType="{x:Type dxb:BarSplitButtonItemArrowControl}">
+        <Grid Background="#00FFFFFF " Margin="3,0,3,0">
+            <Border x:Name="arrow" Background="#00FFFFFF " HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Path x:Name="path" Data="F1M1324,808L1321,811 1318,808 1324,808z" Fill="Black" Height="3" HorizontalAlignment="Center" Margin="0,0,0,1" SnapsToDevicePixels="True" Stretch="Fill" VerticalAlignment="Center" Width="6" />
+            </Border>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <DataTrigger Binding="{Binding Path=IsMouseOver, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type dxb:BarSplitButtonItemLinkControl}}}" Value="True">
+                <Setter Property="Fill" TargetName="path" Value="Black" />
+            </DataTrigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="{dxbt:BarSplitButtonItemThemeKey ResourceKey=ArrowTemplateInMenu}" TargetType="{x:Type dxb:BarSplitButtonItemArrowControl}">
+        <Path Data="F1 M 1340,804L 1344,808L 1340,812L 1340,804 Z " Fill="Black " Height="8" HorizontalAlignment="Center" Stretch="Fill" VerticalAlignment="Center" Width="4" />
+    </ControlTemplate>
+    <ControlTemplate x:Key="{dxbt:BarSplitButtonItemThemeKey ResourceKey=ArrowTemplateInStatusBar}" TargetType="{x:Type dxb:BarSplitButtonItemArrowControl}">
+        <Grid Background="#00FFFFFF " Margin="3,0,3,0">
+            <Border x:Name="arrow" Background="#00FFFFFF " HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Path x:Name="path" Data="F1M1324,808L1321,811 1318,808 1324,808z" Fill="Black " Height="3" HorizontalAlignment="Center" Margin="0,0,0,1" SnapsToDevicePixels="True" Stretch="Fill" VerticalAlignment="Center" Width="6" />
+            </Border>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <DataTrigger Binding="{Binding Path=IsMouseOver, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type dxb:BarSplitButtonItemLinkControl}}}" Value="True">
+                <Setter Property="Fill" TargetName="path" Value="Black" />
+            </DataTrigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+</ResourceDictionary>
