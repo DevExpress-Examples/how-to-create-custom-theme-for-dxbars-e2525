@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [MainWindow.xaml](./CS/CustomTemplates/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/CustomTemplates/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/CustomTemplates/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/CustomTemplates/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/CustomTemplates/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/CustomTemplates/MainWindow.xaml.vb))
 * [Bar.xaml](./CS/CustomTemplates/Themes/Bar.xaml) (VB: [Bar.xaml](./VB/CustomTemplates/Themes/Bar.xaml))
 * [DragElement.xaml](./CS/CustomTemplates/Themes/DragElement.xaml) (VB: [DragElement.xaml](./VB/CustomTemplates/Themes/DragElement.xaml))
